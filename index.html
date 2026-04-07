@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Tarockoff</title>
+  <meta name="description" content="Daniel Tarockoff — builder, operator, investor, and writer exploring technology, consciousness, culture, and special projects." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Daniel Tarockoff" />
+  <meta property="og:description" content="Builder, operator, investor, and writer exploring technology, consciousness, culture, and special projects." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --paper: #fbfaf7;
+      --text: #161616;
+      --muted: #666257;
+      --line: #ddd7ca;
+      --accent: #1f4d8f;
+      --max: 860px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      width: min(calc(100% - 40px), var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 32px 0 20px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: baseline;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .name {
+      font-size: clamp(2.3rem, 5vw, 3.5rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .mini-nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    main {
+      padding: 22px 0 64px;
+    }
+
+    section {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-of-type { border-bottom: 0; }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 14px;
+      font-size: 1.08rem;
+    }
+
+    .lede {
+      font-size: 1.24rem;
+      line-height: 1.6;
+      max-width: 42rem;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin: 0 0 10px;
+      font-size: 1.03rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .label {
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding-top: 2px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 18px;
+      font-size: 1rem;
+    }
+
+    .note {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 18px 18px 16px;
+      border-radius: 8px;
+      margin-top: 6px;
+    }
+
+    footer {
+      padding: 8px 0 48px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      p, li {
+        font-size: 1rem;
+      }
+
+      .lede {
+        font-size: 1.12rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <h1 class="name">Daniel Tarockoff</h1>
+      <nav class="mini-nav" aria-label="Site links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section id="about" class="grid">
+        <div class="label">About</div>
+        <div>
+          <p class="lede">I build and help build ambitious things across technology, culture, consciousness, and human potential.</p>
+          <p>I’m currently building <a href="https://tabzero.ai">Tab Zero</a>, a tool to help people get through the tabs they save instead of drowning in browser backlog.</p>
+          <p>Previously, I worked across venture and special projects, including as a partner at an early-stage fund investing in psychedelics, neurotechnology, and longevity, and later as Chief of Staff at MAPS. Before that, I was a consultant at Strategy&.</p>
+          <p>I’m interested in startups, AI, philosophy, music, altered states, systems change, and the kinds of projects that make life feel larger.</p>
+        </div>
+      </section>
+
+      <section id="work" class="grid">
+        <div class="label">Now</div>
+        <div>
+          <ul>
+            <li>Building <strong>Tab Zero</strong> — an Inbox Zero for internet tabs.</li>
+            <li>Exploring products around memory, context-aware retrieval, and human-AI interaction.</li>
+            <li>Writing and thinking about consciousness, technology, culture, and modern life.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="grid">
+        <div class="label">Selected projects</div>
+        <div>
+          <ul>
+            <li><strong>Tab Zero</strong> — a browser workflow tool for clearing tab overload and getting back to focus.</li>
+            <li><strong>AI memory / retrieval ideas</strong> — work on better ways for humans and AI systems to store, surface, and use the right information at the right time.</li>
+            <li><strong>Creative work</strong> — writing, worldbuilding, and experiments across music, storytelling, and experience design.</li>
+          </ul>
+          <div class="note">
+            This page is intentionally simple. Over time I’ll add essays, project pages, notes, and things I’m learning.
+          </div>
+        </div>
+      </section>
+
+      <section id="writing" class="grid">
+        <div class="label">Writing</div>
+        <div>
+          <p>I’m interested in publishing essays and notes on startups, consciousness, systems, creativity, relationships, and how to live well.</p>
+          <p class="muted">Writing archive coming soon.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="grid">
+        <div class="label">Elsewhere</div>
+        <div>
+          <div class="links">
+            <a href="mailto:hello@tabzero.ai">Email</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
+          </div>
+          <p class="muted" style="margin-top: 14px;">Replace these with your real links before publishing.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">Last updated 2026.</div>
+  </footer>
+</body>
+</html>
