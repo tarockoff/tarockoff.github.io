@@ -4,20 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daniel Tarockoff</title>
-  <meta name="description" content="Daniel Tarockoff — builder, operator, investor, and writer exploring technology, consciousness, culture, and special projects." />
+  <meta name="description" content="Daniel Tarockoff — Head of Special Projects at MAPS." />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Daniel Tarockoff" />
-  <meta property="og:description" content="Builder, operator, investor, and writer exploring technology, consciousness, culture, and special projects." />
-  <meta property="og:type" content="website" />
   <style>
     :root {
-      --bg: #f6f4ef;
-      --paper: #fbfaf7;
-      --text: #161616;
-      --muted: #666257;
-      --line: #ddd7ca;
-      --accent: #1f4d8f;
-      --max: 860px;
+      --bg: #f7f5f0;
+      --paper: #fcfbf8;
+      --text: #111111;
+      --muted: #666666;
+      --line: #dddddd;
+      --accent: #0f4c81;
+      --max: 900px;
     }
 
     * { box-sizing: border-box; }
@@ -27,7 +24,7 @@
       margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       line-height: 1.65;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
@@ -38,7 +35,9 @@
       text-decoration: none;
     }
 
-    a:hover { text-decoration: underline; }
+    a:hover {
+      text-decoration: underline;
+    }
 
     .wrap {
       width: min(calc(100% - 40px), var(--max));
@@ -46,25 +45,44 @@
     }
 
     header {
-      padding: 32px 0 20px;
+      padding: 34px 0 18px;
     }
 
     .topbar {
       display: flex;
       justify-content: space-between;
-      gap: 16px;
-      align-items: baseline;
+      align-items: center;
+      gap: 20px;
       border-bottom: 1px solid var(--line);
       padding-bottom: 18px;
       flex-wrap: wrap;
     }
 
+    .identity {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .headshot {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border: 1px solid var(--line);
+      background: #eaeaea;
+      flex-shrink: 0;
+    }
+
     .name {
-      font-size: clamp(2.3rem, 5vw, 3.5rem);
-      line-height: 0.95;
-      letter-spacing: -0.04em;
       margin: 0;
-      font-weight: 700;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      font-weight: 800;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     }
 
     .mini-nav {
@@ -75,32 +93,59 @@
       font-size: 0.98rem;
     }
 
-    main {
-      padding: 22px 0 64px;
+    .mini-nav a {
+      color: var(--muted);
     }
 
-    section {
-      padding: 20px 0;
+    .mini-nav a:hover {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    main {
+      padding: 18px 0 64px;
+    }
+
+    .intro {
+      padding: 10px 0 24px;
       border-bottom: 1px solid var(--line);
     }
 
-    section:last-of-type { border-bottom: 0; }
+    .intro p {
+      margin: 0;
+      font-size: 1.12rem;
+      max-width: 760px;
+      color: var(--text);
+    }
 
-    h2 {
-      margin: 0 0 12px;
-      font-size: 1.25rem;
+    section {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-of-type {
+      border-bottom: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .label {
+      color: var(--text);
+      font-size: 1rem;
+      font-weight: 700;
       letter-spacing: -0.02em;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     }
 
-    p {
-      margin: 0 0 14px;
-      font-size: 1.08rem;
-    }
-
-    .lede {
-      font-size: 1.24rem;
-      line-height: 1.6;
-      max-width: 42rem;
+    .content p {
+      margin: 0 0 12px;
+      font-size: 1.03rem;
+      color: var(--text);
     }
 
     .muted {
@@ -113,38 +158,25 @@
     }
 
     li {
-      margin: 0 0 10px;
+      margin: 0 0 12px;
       font-size: 1.03rem;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: 170px 1fr;
-      gap: 24px;
-      align-items: start;
+    .sublist {
+      margin-top: 12px;
+      padding-left: 0;
+      list-style: none;
     }
 
-    .label {
-      color: var(--muted);
-      font-size: 0.95rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding-top: 2px;
+    .sublist li {
+      margin-bottom: 10px;
     }
 
     .links {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px 18px;
+      gap: 14px 20px;
       font-size: 1rem;
-    }
-
-    .note {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      padding: 18px 18px 16px;
-      border-radius: 8px;
-      margin-top: 6px;
     }
 
     footer {
@@ -153,18 +185,25 @@
       font-size: 0.95rem;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 720px) {
       .grid {
         grid-template-columns: 1fr;
         gap: 8px;
       }
 
-      p, li {
+      .intro p,
+      .content p,
+      li {
         font-size: 1rem;
       }
 
-      .lede {
-        font-size: 1.12rem;
+      .identity {
+        align-items: center;
+      }
+
+      .headshot {
+        width: 52px;
+        height: 52px;
       }
     }
   </style>
@@ -172,12 +211,15 @@
 <body>
   <header>
     <div class="wrap topbar">
-      <h1 class="name">Daniel Tarockoff</h1>
+      <div class="identity">
+        <img src="profile.jpg" alt="Daniel Tarockoff" class="headshot" />
+        <h1 class="name">Daniel Tarockoff</h1>
+      </div>
+
       <nav class="mini-nav" aria-label="Site links">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
         <a href="#writing">Writing</a>
+        <a href="#projects">Special Projects</a>
+        <a href="#consumption">Recent Content Consumption</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -185,58 +227,59 @@
 
   <main>
     <div class="wrap">
-      <section id="about" class="grid">
-        <div class="label">About</div>
-        <div>
-          <p class="lede">I build and help build ambitious things across technology, culture, consciousness, and human potential.</p>
-          <p>I’m currently building <a href="https://tabzero.ai">Tab Zero</a>, a tool to help people get through the tabs they save instead of drowning in browser backlog.</p>
-          <p>Previously, I worked across venture and special projects, including as a partner at an early-stage fund investing in psychedelics, neurotechnology, and longevity, and later as Chief of Staff at MAPS. Before that, I was a consultant at Strategy&.</p>
-          <p>I’m interested in startups, AI, philosophy, music, altered states, systems change, and the kinds of projects that make life feel larger.</p>
-        </div>
-      </section>
+      <div class="intro">
+        <p>
+          <a href="https://www.maps.org" target="_blank" rel="noreferrer">Head of Special Projects at MAPS</a>.
+          Figuring out how my mind works and how yours does too.
+          Previously:
+          Berkeley Haas Dropout.
+          General Partner at <a href="https://www.vine.vc" target="_blank" rel="noreferrer">Vine Ventures</a>.
+          Strategy consultant at Strategy&amp; (formerly Booz &amp; Company).
+          Michigan Ross Graduate.
+        </p>
+      </div>
 
-      <section id="work" class="grid">
-        <div class="label">Now</div>
-        <div>
-          <ul>
-            <li>Building <strong>Tab Zero</strong> — an Inbox Zero for internet tabs.</li>
-            <li>Exploring products around memory, context-aware retrieval, and human-AI interaction.</li>
-            <li>Writing and thinking about consciousness, technology, culture, and modern life.</li>
-          </ul>
+      <section id="writing" class="grid">
+        <div class="label">Writing</div>
+        <div class="content">
+          <p>Coming soon.</p>
         </div>
       </section>
 
       <section id="projects" class="grid">
-        <div class="label">Selected projects</div>
-        <div>
+        <div class="label">Special Projects</div>
+        <div class="content">
           <ul>
-            <li><strong>Tab Zero</strong> — a browser workflow tool for clearing tab overload and getting back to focus.</li>
-            <li><strong>AI memory / retrieval ideas</strong> — work on better ways for humans and AI systems to store, surface, and use the right information at the right time.</li>
-            <li><strong>Creative work</strong> — writing, worldbuilding, and experiments across music, storytelling, and experience design.</li>
+            <li>
+              <strong>TabZero</strong> — Inbox Zero for your internet tabs. A tool to help people actually get through what they save instead of drowning in browser backlog.
+            </li>
+            <li>
+              <strong>Style Me</strong> — a social styling app where you can photograph the items you own and get recommendations on what to pair, replace, or add from AI, friends, or strangers.
+            </li>
           </ul>
-          <div class="note">
-            This page is intentionally simple. Over time I’ll add essays, project pages, notes, and things I’m learning.
-          </div>
         </div>
       </section>
 
-      <section id="writing" class="grid">
-        <div class="label">Writing</div>
-        <div>
-          <p>I’m interested in publishing essays and notes on startups, consciousness, systems, creativity, relationships, and how to live well.</p>
-          <p class="muted">Writing archive coming soon.</p>
+      <section id="consumption" class="grid">
+        <div class="label">Recent Content Consumption</div>
+        <div class="content">
+          <ul class="sublist">
+            <li><strong>Book:</strong> Add current book here</li>
+            <li><strong>Podcast:</strong> Add recent podcast here</li>
+            <li><strong>Song on repeat:</strong> Add song here</li>
+            <li><strong>Article:</strong> Add article here</li>
+          </ul>
         </div>
       </section>
 
       <section id="contact" class="grid">
-        <div class="label">Elsewhere</div>
-        <div>
+        <div class="label">Contact</div>
+        <div class="content">
           <div class="links">
-            <a href="mailto:hello@tabzero.ai">Email</a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
+            <a href="mailto:tarockoff@berkeley.edu">tarockoff@berkeley.edu</a>
+            <a href="https://www.linkedin.com/in/danieltarockoff" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.x.com/dtarockoff" target="_blank" rel="noreferrer">X</a>
           </div>
-          <p class="muted" style="margin-top: 14px;">Replace these with your real links before publishing.</p>
         </div>
       </section>
     </div>
