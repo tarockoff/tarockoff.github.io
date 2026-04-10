@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daniel Tarockoff</title>
-  <meta name="description" content="Daniel Tarockoff — Head of Special Projects at MAPS." />
+  <meta name="description" content="Daniel Tarockoff — Head of Special Projects at the Multidisciplinary Association for Psychedelic Studies (MAPS)." />
   <meta name="robots" content="index, follow" />
   <style>
     :root {
@@ -13,7 +13,7 @@
       --text: #111111;
       --muted: #666666;
       --line: #dddddd;
-      --accent: #0f4c81;
+      --accent: #0b4f8a;
       --max: 900px;
     }
 
@@ -102,28 +102,7 @@
     }
 
     .intro-primary {
-      margin-bottom: 2px;
-    }
-
-    .intro-tagline {
-      margin-bottom: 8px;
-    }
-
-    .maps-link {
-      display: inline-flex;
-      align-items: center;
-      vertical-align: middle;
-    }
-
-    .maps-logo-inline {
-      height: 0.95em;
-      width: auto;
-      display: block;
-      transform: translateY(0.02em);
-    }
-
-    .intro-secondary {
-      color: var(--muted);
+      margin-bottom: 0;
     }
 
     section {
@@ -143,7 +122,7 @@
     }
 
     .label {
-      color: var(--text);
+      color: var(--accent);
       font-size: 1rem;
       font-weight: 700;
       letter-spacing: -0.02em;
@@ -171,13 +150,14 @@
     }
 
     .sublist {
-      margin-top: 12px;
+      margin-top: 0;
       padding-left: 0;
       list-style: none;
     }
 
     .sublist li {
       margin-bottom: 10px;
+      white-space: nowrap;
     }
 
     .links {
@@ -207,6 +187,10 @@
         width: 52px;
         height: 52px;
       }
+
+      .sublist li {
+        white-space: normal;
+      }
     }
   </style>
 </head>
@@ -214,7 +198,7 @@
   <header>
     <div class="wrap topbar">
       <div class="identity">
-        <img src="profile.jpeg" alt="Daniel Tarockoff" class="headshot" />
+        <img src="profile.jpg" alt="Daniel Tarockoff" class="headshot" />
         <h1 class="name">Daniel Tarockoff</h1>
       </div>
     </div>
@@ -224,15 +208,24 @@
     <div class="wrap">
       <div class="intro">
         <p class="intro-primary">
-          <strong>Head of Special Projects at <a href="https://www.maps.org" target="_blank" rel="noreferrer" class="maps-link"><img src="maps.jpeg" alt="MAPS" class="maps-logo-inline" /></a>.</strong>
+          <strong>Head of Special Projects at the <a href="https://www.maps.org" target="_blank" rel="noreferrer">Multidisciplinary Association for Psychedelic Studies (MAPS)</a>.</strong>
         </p>
-        <p class="intro-secondary intro-tagline">
-          Figuring out how my mind works and how yours does too.
-        </p>
-        <p class="intro-secondary">
-          Previously: Berkeley Haas Dropout. General Partner at <a href="https://www.vine.vc" target="_blank" rel="noreferrer">Vine Ventures</a>. Strategy consultant at Strategy&amp; (formerly Booz &amp; Company). Michigan Ross Graduate.
+        <p class="intro-primary">
+          <strong>Figuring out how my mind works and how yours does too.</strong>
         </p>
       </div>
+
+      <section id="experience" class="grid">
+        <div class="label">Experience</div>
+        <div class="content">
+          <ul>
+            <li>Berkeley Haas Dropout</li>
+            <li>General Partner at <a href="https://www.vine.vc" target="_blank" rel="noreferrer">Vine Ventures</a></li>
+            <li>Strategy consultant at Strategy&amp; (formerly Booz &amp; Company)</li>
+            <li>Michigan Ross Graduate</li>
+          </ul>
+        </div>
+      </section>
 
       <section id="writing" class="grid">
         <div class="label">Writing</div>
@@ -246,23 +239,19 @@
         <div class="content">
           <ul>
             <li>
-              <strong>TabZero</strong> — Inbox Zero for your internet tabs. A tool to help people actually get through what they save instead of drowning in browser backlog.
-            </li>
-            <li>
-              <strong>Style Me</strong> — a social styling app where you can photograph the items you own and get recommendations on what to pair, replace, or add from AI, friends, or strangers.
+              <strong><a href="https://tabzero.ai" target="_blank" rel="noreferrer">TabZero</a></strong> — Inbox Zero for your internet tabs. A tool to help people actually get through what they save instead of drowning in browser backlog.
             </li>
           </ul>
         </div>
       </section>
 
-      <section id="consumption" class="grid">
+      <section id="content" class="grid">
         <div class="label">Content</div>
         <div class="content">
           <ul class="sublist">
-            <li><strong>Book:</strong> Add current book here</li>
-            <li><strong>Podcast:</strong> Add recent podcast here</li>
-            <li><strong>Song on repeat:</strong> Add song here</li>
-            <li><strong>Article:</strong> Add article here</li>
+            <li><strong>Book:</strong> <em>A World Appears</em> by Michael Pollan</li>
+            <li><strong>Podcast:</strong> <em>The Endless Honeymoon Podcast</em> with Natasha Leggero and Moshe Kasher</li>
+            <li><strong>Song on repeat (playlist coming soon):</strong> “WHATEVER WORKS” by Ye</li>
           </ul>
         </div>
       </section>
