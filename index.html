@@ -13,7 +13,7 @@
       --text: #111111;
       --muted: #666666;
       --line: #dddddd;
-      --accent: #0b4f8a;
+      --accent: #168a72;
       --max: 900px;
     }
 
@@ -102,7 +102,12 @@
     }
 
     .intro-primary {
-      margin-bottom: 0;
+      margin-bottom: 2px;
+      white-space: nowrap;
+    }
+
+    .intro-secondary {
+      font-weight: 400;
     }
 
     section {
@@ -188,7 +193,8 @@
         height: 52px;
       }
 
-      .sublist li {
+      .sublist li,
+      .intro-primary {
         white-space: normal;
       }
     }
@@ -198,7 +204,7 @@
   <header>
     <div class="wrap topbar">
       <div class="identity">
-        <img src="profile.jpg" alt="Daniel Tarockoff" class="headshot" />
+        <img src="profile.jpeg" alt="Daniel Tarockoff" class="headshot" />
         <h1 class="name">Daniel Tarockoff</h1>
       </div>
     </div>
@@ -210,8 +216,8 @@
         <p class="intro-primary">
           <strong>Head of Special Projects at the <a href="https://www.maps.org" target="_blank" rel="noreferrer">Multidisciplinary Association for Psychedelic Studies (MAPS)</a>.</strong>
         </p>
-        <p class="intro-primary">
-          <strong>Figuring out how my mind works and how yours does too.</strong>
+        <p class="intro-secondary">
+          Figuring out how my mind works and how yours does too.
         </p>
       </div>
 
