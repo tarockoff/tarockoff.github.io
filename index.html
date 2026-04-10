@@ -4,18 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daniel Tarockoff</title>
-  <meta name="description" content="Daniel Tarockoff — Head of Special Projects at MAPS." />
+  <meta name="description" content="Daniel Tarockoff" />
   <meta name="robots" content="index, follow" />
   <style>
     :root {
       --bg: #f7f5f0;
-      --paper: #fcfbf8;
       --text: #111111;
       --muted: #666666;
       --line: #dddddd;
-      --accent: #126f5b;
+      --accent: #106b58;
       --link: #0f4c81;
       --max: 900px;
+      --body-size: 1rem;
     }
 
     * { box-sizing: border-box; }
@@ -29,6 +29,7 @@
       line-height: 1.65;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
+      font-size: var(--body-size);
     }
 
     a {
@@ -97,34 +98,13 @@
 
     .intro p {
       margin: 0;
-      font-size: 1rem;
+      font-size: var(--body-size);
       max-width: 760px;
       color: var(--text);
     }
 
-    .intro-primary {
-      margin-bottom: 2px;
-    }
-
-    .intro-tagline {
-      margin-bottom: 8px;
-    }
-
-    .maps-link {
-      display: inline-flex;
-      align-items: center;
-      vertical-align: middle;
-    }
-
-    .maps-logo-inline {
-      height: 0.95em;
-      width: auto;
-      display: block;
-      transform: translateY(0.02em);
-    }
-
     .intro-secondary {
-      color: var(--muted);
+      font-weight: 400;
     }
 
     section {
@@ -145,7 +125,7 @@
 
     .label {
       color: var(--accent);
-      font-size: 1rem;
+      font-size: var(--body-size);
       font-weight: 700;
       letter-spacing: -0.02em;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -153,12 +133,8 @@
 
     .content p {
       margin: 0 0 12px;
-      font-size: 1rem;
+      font-size: var(--body-size);
       color: var(--text);
-    }
-
-    .muted {
-      color: var(--muted);
     }
 
     ul {
@@ -168,36 +144,35 @@
 
     li {
       margin: 0 0 12px;
-      font-size: 1rem;
+      font-size: var(--body-size);
+    }
+
+    .nowrap {
+      white-space: nowrap;
     }
 
     .sublist {
-      margin-top: 12px;
+      margin-top: 0;
       padding-left: 0;
       list-style: none;
     }
 
     .sublist li {
       margin-bottom: 10px;
+      white-space: nowrap;
     }
 
     .links {
       display: flex;
       flex-wrap: wrap;
       gap: 14px 20px;
-      font-size: 1rem;
+      font-size: var(--body-size);
     }
 
     @media (max-width: 720px) {
       .grid {
         grid-template-columns: 1fr;
         gap: 8px;
-      }
-
-      .intro p,
-      .content p,
-      li {
-        font-size: 1rem;
       }
 
       .identity {
@@ -207,6 +182,11 @@
       .headshot {
         width: 52px;
         height: 52px;
+      }
+
+      .sublist li,
+      .nowrap {
+        white-space: normal;
       }
     }
   </style>
@@ -224,7 +204,7 @@
   <main>
     <div class="wrap">
       <div class="intro">
-        <p class="intro-secondary intro-tagline">
+        <p class="intro-secondary">
           Figuring out how my mind works and how yours does too.
         </p>
       </div>
@@ -233,7 +213,7 @@
         <div class="label">Experience</div>
         <div class="content">
           <ul>
-            <li><strong>Head of Special Projects at the <a href="https://www.maps.org" target="_blank" rel="noreferrer">Multidisciplinary Association for Psychedelic Studies (MAPS)</a></strong> (2024-present)</li>
+            <li class="nowrap"><strong>Head of Special Projects at the <a href="https://www.maps.org" target="_blank" rel="noreferrer">Multidisciplinary Association for Psychedelic Studies (MAPS)</a></strong> (2024-present)</li>
             <li><strong>General Partner at <a href="https://www.vine.vc" target="_blank" rel="noreferrer">Vine Ventures</a></strong> (2020-2023)</li>
             <li>Berkeley Haas Dropout (2020-2021)</li>
             <li>Strategy consultant at Strategy&amp; (formerly Booz &amp; Company) (2015-2020)</li>
@@ -254,23 +234,19 @@
         <div class="content">
           <ul>
             <li>
-              <strong>TabZero</strong> — Inbox Zero for your internet tabs. A tool to help people actually get through what they save instead of drowning in browser backlog.
-            </li>
-            <li>
-              <strong>Style Me</strong> — a social styling app where you can photograph the items you own and get recommendations on what to pair, replace, or add from AI, friends, or strangers.
+              <strong><a href="https://tabzero.ai" target="_blank" rel="noreferrer">TabZero</a></strong> — Inbox Zero for your internet tabs. A tool to help people actually get through what they save instead of drowning in browser backlog.
             </li>
           </ul>
         </div>
       </section>
 
-      <section id="consumption" class="grid">
+      <section id="content" class="grid">
         <div class="label">Content</div>
         <div class="content">
           <ul class="sublist">
-            <li><strong>Book:</strong> Add current book here</li>
-            <li><strong>Podcast:</strong> Add recent podcast here</li>
-            <li><strong>Song on repeat:</strong> Add song here</li>
-            <li><strong>Article:</strong> Add article here</li>
+            <li><strong>Book:</strong> <em>A World Appears</em> by Michael Pollan</li>
+            <li><strong>Podcast:</strong> <em>The Endless Honeymoon Podcast</em> with Natasha Leggero and Moshe Kasher</li>
+            <li><strong>Song on repeat (playlist coming soon):</strong> “WHATEVER WORKS” by Ye</li>
           </ul>
         </div>
       </section>
